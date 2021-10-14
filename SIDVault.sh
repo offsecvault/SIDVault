@@ -76,6 +76,9 @@ whoami | sudo tee /home/FCI/$type/whoami.txt >/dev/null
 #>>>>: uptime
 sudo touch /home/FCI/$type/uptime.txt >/dev/null
 uptime | sudo tee /home/FCI/$type/uptime.txt >/dev/null
+#>>>>: route
+sudo touch /home/FCI/$type/route.txt >/dev/null
+route | sudo tee /home/FCI/$type/route.txt >/dev/null
 
 # CREATING VAULT [compress]
 echo -e "\ncreating vault on file /home/FCI/$type.tar.gz\n"
