@@ -14,18 +14,18 @@ echo -e "     O F F S E C V A U L T"
 echo -e "          SIDVault"
 echo -e "======================================\n\n"
 echo -e "What to do ?\n\n"
-echo -e "33. Collect Information\n"
-echo -e "11. Print Banner\n"
+echo -e "3. Collect Information\n"
+echo -e "0. Exit\n"
 
 echo -ne "Please choose one: "
 read option
-if (("$option" == "33")); then
+if (("$option" == "3")); then
         echo -ne "\nSet the collection name: "
         read name
         type="OFSV_"$name
         echo -e "\nFolder /home/FCI/$type was created\n\n"
-elif (("$type" == "11")); then
-        print "hola"
+elif (("$type" == "0")); then
+        exit 0;
 else
         echo -e "\n\n"
         exit 0;
