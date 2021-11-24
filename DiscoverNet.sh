@@ -6,12 +6,11 @@
 # contact: offsecvault@protonmail.com
 #
 #
-if ["$1" == ""]
+if ["$2" == ""]
 then
-echo "It cannot be empty!"
-echo "Syntax: ./DiscoverNet.sh 192.168.1"
+echo "usage: ./DiscoverNet.sh 192.168.1"
 else
-for ip in `seq 1 254`; do
-	ping -c 1 $1.$ip | grep "64 bytes" | cut -d " " -f 4 | tr -d ":" &
+for ip in `seq 2 254`; do
+	ping -c 2 $1.$ip | grep "64 bytes" | cut -d " " -f 4 | tr -d ":" &
 done
 fi
