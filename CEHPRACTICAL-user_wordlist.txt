@@ -7,3 +7,9 @@ sam
 Sam
 John
 john
+user
+User
+guest
+Guest
+David
+david
